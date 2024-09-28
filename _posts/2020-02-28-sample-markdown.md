@@ -10,7 +10,17 @@ author: Benjamin Chern
 {% include youtubePlayer.html id=pbvPtyYYVq0 %}
 
 
+## Capabilities
+  - Individual control of 88 keys
+  - 255 Levels of volume modulation using PWM
+  - Converts MIDI to compact bitset to increase data transmission speed
+  - Cascading series of Queues to ensure notes are timed properly
 
+## Background
+
+Like any good asian child, me and my sister played the piano since we were young at the insistence of our parents. Unlike my sister though, I stopped lessons at the end of elementary school and my skills have slowly declined since. Now she is head and shoulders ahead of me and this project is my attempt at leveling the field. Of course, mechanical hands can never match human ones, but I have put in effort to make the gap as small as possible.
+
+##
 
 You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
 When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
