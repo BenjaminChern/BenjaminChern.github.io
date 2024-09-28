@@ -3,11 +3,12 @@ layout: post
 title: Self Playing Piano
 subtitle: A project 2.5 years in the making
 author: Benjamin Chern
+youtubeId: pbvPtyYYVq0
 ---
 
 ## Demo:
 
-{% include youtubePlayer.html id=pbvPtyYYVq0 %}
+{% include youtubePlayer.html id=page.youtubeId %}
 
 
 ## Capabilities
