@@ -25,11 +25,17 @@ Like any good asian child, me and my sister played the piano since we were young
 
 Since I am most comfortable with robotics, I started development by laying out the broad strokes concerning mechanisms and control hardware. Solenoids were the easy choice to press the piano keys but they were not without downsides. Solenoids are fast, powerful and the linear motion suits the project well. However solenoids also are power hungry, heavy, produce a loud clicking noise when bottoming out, and are expensive to buy. Regardless, the speed and lack of rotational motion were too important to pass on so a lot of this project became about mitigating the downsides of using solenoids. 
 
+<img src="/assets/img/IMG_1989.JPG" alt="Pile of Solenoids" width="400"/>
+
+*JF1039-B Solenoids*
+
+
 An obvious problem arises, how do you control 88 solenoids at once? An arduino/raspberry pi has around 16 output pins so wiring them directly is out of the question. I also want to drive the solenoids using PWM to control volume which further narrows the set of options available. After considerable thought, I believe the solution lies in either a shift register or I2C GPIO expander. Either approach would have worked fine, however I chose the I2C expander option due to a familiarity with the I2C protocol. 
 
 Mounting the device to the piano also merits a bit of planning which I did not initially do. Since I focused upon the electronics heavily, the chassis was neglected more than it should have been, leading to the ugly wooden spacer in version 1 found [here](https://www.youtube.com/watch?v=qJCV7lqjcMM). When I revisited the project for V2, I added an additional aluminum bar for strength and combined with formal 3D modeling classes, the body was much more efficient than before. 
 
-![Pile of Solenoids](/BenjaminChern.github.io/assets/img/IMG_1989.png)
+
+
 
 ## Custom PCB Work
 
