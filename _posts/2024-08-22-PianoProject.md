@@ -28,7 +28,7 @@ For those of you who want to build something similar, a BOM is provided [here](h
 
 Since I am most comfortable with robotics, I started development by laying out the broad strokes concerning mechanisms and control hardware. Solenoids were the easy choice to press the piano keys but they were not without downsides. Solenoids are fast, powerful and the linear motion suits the project well. However solenoids also are power hungry, heavy, produce a loud clicking noise when bottoming out, and are expensive to buy. Regardless, the speed and lack of rotational motion were too important to pass on so a lot of this project became about mitigating the downsides of using solenoids. 
 
-<img src="/assets/img/IMG_1989.JPG" alt="Pile of Solenoids" width="400"/>
+<img src="/assets/img/IMG_1989.JPG" alt="Pile of Solenoid" width="400"/>
 
 *JF1039-B Solenoids*
 
