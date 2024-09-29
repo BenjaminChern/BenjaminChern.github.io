@@ -22,6 +22,8 @@ thumbnail: /assets/img/assem3d.png
 
 Like any good asian child, me and my sister played the piano since we were young at the insistence of our parents. Unlike my sister though, I stopped lessons at the end of elementary school and my skills have slowly declined since. Now she is head and shoulders ahead of me and this project is my attempt at leveling the field. Of course, mechanical hands can never match human ones, but I have put in effort to make the gap as small as possible.
 
+For those of you who want to build something similar, a BOM is provided [here](https://docs.google.com/spreadsheets/d/1bXkQbmqT-mZEo7c7j04EbVl9RrMYEGBfQyleS4RUtM8/edit?usp=sharing) with the costs I paid for each part.
+
 ## Planning
 
 Since I am most comfortable with robotics, I started development by laying out the broad strokes concerning mechanisms and control hardware. Solenoids were the easy choice to press the piano keys but they were not without downsides. Solenoids are fast, powerful and the linear motion suits the project well. However solenoids also are power hungry, heavy, produce a loud clicking noise when bottoming out, and are expensive to buy. Regardless, the speed and lack of rotational motion were too important to pass on so a lot of this project became about mitigating the downsides of using solenoids. 
