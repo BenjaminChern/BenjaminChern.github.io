@@ -29,6 +29,8 @@ An obvious problem arises, how do you control 88 solenoids at once? An arduino/r
 
 Mounting the device to the piano also merits a bit of planning which I did not initially do. Since I focused upon the electronics heavily, the chassis was neglected more than it should have been, leading to the ugly wooden spacer in version 1 found [here](https://www.youtube.com/watch?v=qJCV7lqjcMM). When I revisited the project for V2, I added an additional aluminum bar for strength and combined with formal 3D modeling classes, the body was much more efficient than before. 
 
+![Pile of Solenoids](/BenjaminChern.github.io/assets/img/IMG_1989.png)
+
 ## Custom PCB Work
 
 There are pre-existing I2C GPIO expanders on the market in the form of neat little development boards which would suit most purposes. However the solenoids produce a noticeable buzzing noise when driven by PWM with the frequency of the operating frequency of the PWM generating chip. For example, common GPIO expanders like [this one](https://www.adafruit.com/product/815) use the PCA9685 chipset with a PWM frequency of 1.6kHz, producing a 1.6kHz whine while the device is operational. This whine is not ideal and is what led me to proceed with a chipset from the same family (PCA9635) which offers up to 97kHz frequency which is far outside human hearing. With the help from online resources and an invaluable mentor from an online community, I was able to learn the design software EAGLE and send a design to JLCPCB which did much of the component assembly for me.
