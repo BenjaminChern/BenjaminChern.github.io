@@ -15,7 +15,7 @@ thumbnail: /assets/img/assem3d.png
 ## Capabilities
   - Individual control of 88 keys
   - 255 Levels of volume modulation using PWM
-  - Converts MIDI to compact bitset to increase data transmission speed
+  - Converts MIDI to compact 4 byte package to increase data transmission speed
   - Cascading series of Queues to ensure notes are timed properly
 
 ## Background
