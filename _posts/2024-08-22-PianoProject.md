@@ -41,13 +41,24 @@ Mounting the device to the piano also merits a bit of planning which I did not i
 
 There are pre-existing I2C GPIO expanders on the market in the form of neat little development boards which would suit most purposes. However the solenoids produce a noticeable buzzing noise when driven by PWM with the frequency of the operating frequency of the PWM generating chip. For example, common GPIO expanders like [this one](https://www.adafruit.com/product/815) use the PCA9685 chipset with a PWM frequency of 1.6kHz, producing a 1.6kHz whine while the device is operational. This whine is not ideal and is what led me to proceed with a chipset from the same family (PCA9635) which offers up to 97kHz frequency which is far outside human hearing. With the help from online resources and an invaluable mentor from an online community, I was able to learn the design software EAGLE and send a design to JLCPCB which did much of the component assembly for me.
 
-<img src="/assets/img/Board.JPG" alt="Final PCB" width="400"/>
+<p float="left">
+  <img src="/assets/img/Board.JPG" width="400" />
+  <img src="/assets/img/Boardviewer.png" width="400" /> 
+</p>
 
-*Final PCB Design*
+*Final Physical Product, Final PCB Design*
 
 ## Electrical System
 
 The heart of this project is an Arduino Mega doing all the scheduling and coordination. In hindsight this should have been on my local machine (laptop) but what's done is done. Each custom PCB is daisy chained on the I2C bus with different addresses starting at 0x40 and ending at 0x47. A 24V, 20A power supply powers the solenoids through a distribution bus while a buck-boost converter drops the voltage down to 12 to power the logic and relay. In the future, I want to use the arduino to control a set of linear actuators for the pedal mechanism but that is outside of the time constraints for now. Currently the relay is used to hold power from the solenoids until after the PCBs have finished initializing so the solenoids don't fire before logic is initialized. 
+
+<img src="/assets/img/Daisychain.JPG" alt="Final PCB" width="800"/>
+
+*I2C Daisy chained boards*
+
+<img src="/assets/img/Electronics.jpg" alt="Final PCB" width="250"/>
+
+*List of electronics*
 
 ## Code
 
@@ -57,7 +68,14 @@ Upon recieving a "noteEvent" I parsed the note and send it to a queue to play th
 
 ## Chassis Construction
 
-The entire design is based upon 2 long horizontal 20x20mm aluminum T bar extrusions that span the length of the piano. The T slots allow my 3d prints to slide onto the rails, each of which carries 1 full octave of notes or 12 solenoids. The spacing is extremly tight as one solenoid is about 1mm thinner than a white key, demanding high precision and low tolerences. Another thing learned is that every piano is different. I had to take literal hundreds of measurements as me and my 3D printer narrowed down proper dimensions and angles. The solenoids are also really heavy, with the 88 of them weighing over 20 pounds. This caused a bit of sag near the middle which I would like to address if there ever is a V3. Eventually though, I got 84/88 solenoids mounted on top of the piano with a basic platform above the solenoids for the electronics to rest upon
+The entire design is based upon 2 long horizontal 20x20mm aluminum T bar extrusions that span the length of the piano. The T slots allow my 3d prints to slide onto the rails, each of which carries 1 full octave of notes or 12 solenoids. The spacing is extremly tight as one solenoid is about 1mm thinner than a white key, demanding high precision and low tolerences. All of this was designed in Fusion360 and while I am not a master at 3D modeling, I think this project helped me improve. Another thing learned is that every piano is different. I had to take literal hundreds of measurements as me and my 3D printer narrowed down proper dimensions and angles. The solenoids are also really heavy, with the 88 of them weighing over 20 pounds. This caused a bit of sag near the middle which I would like to address if there ever is a V3. Eventually though, I got 84/88 solenoids mounted on top of the piano with a basic platform above the solenoids for the electronics to rest upon
+
+<p float="left">
+  <img src="/assets/img/assem3d.png" width="400" /> 
+  <img src="/assets/img/Solenoid3d.png" width="400" />
+</p>
+
+*Assembly View, Individual Module*
 
 ## Conclusion
 
