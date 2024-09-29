@@ -63,12 +63,6 @@ The heart of this project is an Arduino Mega doing all the scheduling and coordi
 
 *List of electronics*
 
-## Code
-
-Although I have little formal software engineering experience, I am quite proud of what I wrote for this project. The software is split into two parts, one half on my local machine and the other on the onboard arduino. On the computer side, A library (documentation found [here](https://www.fourmilab.ch/webtools/midicsv/) is used to convert the MIDI to a CSV file which is then parsed through using Python to extract the important information: state, note, volume, time. The note value falls from 1-88, meaning it fits within 1 byte. Volume is from 0-255 meaning it is just outside 1 byte. State is binary, either an "on" event or "off" event, allowing it to be 1 bit. For the sake of ease though, I sent state as a byte, wasting some space. Since all events were bytes, they could be converted to an ASCII char and sent over USB serial to the arduino. A "noteEvent" would therefore look something like: !E~0. Using the timing given by the CSV file, I send the note commands over, delaying the amount specified.
-
-Upon recieving a "noteEvent" I parsed the note and send it to a queue to play the note. It is incredibly important to know that the arduino is single threaded so there is no such thing as delaying in one part of the code and executing another part while waiting. This complicates the playing process massively but using a cascading set of queues along with implementing some pseudo multithreading, I just about got it done. The process of playing a note goes as follows. For the first 10ms, I play the note at full volume to break the static friction of the piano key. For the next 50-150ms this is when the PWM modulation comes in and the power used during this time determines the volume of the note. Finally once the solenoid bottoms out, the power is reduced to 1/4 since not much energy is require to keep the key pressed and the force of a solenoid increases with the square of distance to the end. 
-
 ## Chassis Construction
 
 The entire design is based upon 2 long horizontal 20x20mm aluminum T bar extrusions that span the length of the piano. The T slots allow my 3d prints to slide onto the rails, each of which carries 1 full octave of notes or 12 solenoids. The spacing is extremly tight as one solenoid is about 1mm thinner than a white key, demanding high precision and low tolerences. All of this was designed in Fusion360 and while I am not a master at 3D modeling, I think this project helped me improve. Another thing learned is that every piano is different. I had to take literal hundreds of measurements as me and my 3D printer narrowed down proper dimensions and angles. The solenoids are also really heavy, with the 88 of them weighing over 20 pounds. This caused a bit of sag near the middle which I would like to address if there ever is a V3. Eventually though, I got 84/88 solenoids mounted on top of the piano with a basic platform above the solenoids for the electronics to rest upon
@@ -79,6 +73,12 @@ The entire design is based upon 2 long horizontal 20x20mm aluminum T bar extrusi
 </p>
 
 *Assembly View, Individual Module*
+
+## Code
+
+Although I have little formal software engineering experience, I am quite proud of what I wrote for this project. The software is split into two parts, one half on my local machine and the other on the onboard arduino. On the computer side, A library (documentation found [here](https://www.fourmilab.ch/webtools/midicsv/) is used to convert the MIDI to a CSV file which is then parsed through using Python to extract the important information: state, note, volume, time. The note value falls from 1-88, meaning it fits within 1 byte. Volume is from 0-255 meaning it is just outside 1 byte. State is binary, either an "on" event or "off" event, allowing it to be 1 bit. For the sake of ease though, I sent state as a byte, wasting some space. Since all events were bytes, they could be converted to an ASCII char and sent over USB serial to the arduino. A "noteEvent" would therefore look something like: !E~0. Using the timing given by the CSV file, I send the note commands over, delaying the amount specified.
+
+Upon recieving a "noteEvent" I parsed the note and send it to a queue to play the note. It is incredibly important to know that the arduino is single threaded so there is no such thing as delaying in one part of the code and executing another part while waiting. This complicates the playing process massively but using a cascading set of queues along with implementing some pseudo multithreading, I just about got it done. The process of playing a note goes as follows. For the first 10ms, I play the note at full volume to break the static friction of the piano key. For the next 50-150ms this is when the PWM modulation comes in and the power used during this time determines the volume of the note. Finally once the solenoid bottoms out, the power is reduced to 1/4 since not much energy is require to keep the key pressed and the force of a solenoid increases with the square of distance to the end. 
 
 ## Conclusion
 
