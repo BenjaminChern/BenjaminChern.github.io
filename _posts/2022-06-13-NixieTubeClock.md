@@ -34,9 +34,10 @@ This document is intended to explain the technical details of my nixie tube cloc
 
 
 <p float="left">
-  <img src="/assets/img/1.jpg" width="400" />
-  <img src="/assets/img/2.jpg" width="400" /> 
-  <img src="/assets/img/3.jpg" width="400" />
+  <img src="/assets/img/1.jpg" width="300" />
+  <img src="/assets/img/2.jpg" width="300" /> 
+  <img src="/assets/img/3.jpg" width="300" />
+  <img src="/assets/img/4.gif" width="300" />
 </p>
 
                                                                                                                                         
