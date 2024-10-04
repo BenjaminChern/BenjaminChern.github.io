@@ -34,16 +34,16 @@ This document is intended to explain the technical details of my nixie tube cloc
                                                                                                                                         
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="/assets/img/1.jpg" width="700"/>
+          <img src="/assets/img/1.jpg" width="1200"/>
      </div>
      <div style="flex:1;padding-left:10px;">
-          <img src="/assets/img/2.jpg" width="700"/>
+          <img src="/assets/img/2.jpg" width="1200"/>
      </div>
      <div style="flex:1;padding-left:10px;">
-          <img src="3.jpg" width="700"/>
+          <img src="/assets/img/3.jpg" width="1200"/>
      </div>
     <div style="flex:1;padding-left:10px;">
-      <img src="4.gif" width=60% height=50%">
+      <img src="/assets/img/4.gif" width=60% height=50%">
     </div>
 </div>
                                                                                                                                         
@@ -70,14 +70,14 @@ The housing design is mostly based off [this](www.etsy.com/listing/751460311) et
 
 ## Wiring Diagram
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/61395558/213847691-8c291b48-8104-444c-942a-8e9b377d7e18.jpg" width=60% height=50%">
+  <img src="/assets/img/6.jpg" width=60% height=50%">
 </p>
 
 At the time, I did not understand how to create wiring diagrams so I do not have anything proper for others to use. However I do have a picture of the diagram I used for much of the project. Do be warned though that it is quite messy and will probably not be much help. In essence the DC barrel jack outputs 14v which powers the arduino, the 170 volt boost converter, and a board that outputs 3.3 volts. The 3.3 volts and 170 volts are connected to the driver boards in parallel and while the SDA, SCL, and PINOUT lines on the arduino are connected to the boards in parallel. Finally all of the boards are grounded to a common ground. 
 
 # Components
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/61395558/213847820-7f668c7a-fa5d-4c33-bce5-2fe52b6ff2d6.jpg" width=60% height=50%">
+  <img src="/assets/img/7.jpg" width=60% height=50%">
 </p>
 
 Most of these parts are off-the-shelf products from places like Amazon or Digikey except for the driverboard. I have no complaints with any of these components and if I were to build this again, I would order the same things. 
@@ -94,7 +94,7 @@ There is not much to say about the other PCBs. The [NCH6100HV](https://www.ebay.
 
 # Assembly
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/61395558/213847892-572afab6-e4cf-4281-b2fb-8e73f19aa741.jpg" width=60% height=50%">
+  <img src="/assets/img/8.jpg" width=60% height=50%">
 </p>
 
 This was by far the most time consuming part of the process. I had little experience with soldering and no experience with woodworking. Regardless, everything turned out fine and I am suprised with how well it went for my first time. In order to fit all the wiring into such a cramped space, I spliced multiple dupont wires together in order to create data-lines from the driver boards to the arduino. The result is not suitable for long term applications, however it still is working for now. 
@@ -103,14 +103,14 @@ This was by far the most time consuming part of the process. I had little experi
 
 The housing was the most difficult part of this project. I originally intended to use a CNC machine to hollow out a 6x6x3 inch block of wood found [here](https://www.rockler.com/plain-maple-turning-blanks). However after talking to people at my local makerspace, I was convinced to hollow the block out by hand. I started with the drill press and made 4 large holes at the corners with the biggest bit. After that, I went in with a hammer and chisel to remove the four edges. Along the way I cracked the outside slightly which was to be expected considering the method I was using. By this time I was already frustrated with the slow pace but that was nothing compared to the sanding process. I sanded the same block of wood for about 16 hours spread over the course of 3 days. I was so scared of cracking the outside that I sanded down a whole inch worth of maple on both sides by the time I was done. The pain was worth it though, as I really enjoy how the final result looks and I call it a sucess for my first woodworking project. 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/61395558/213848224-83fa51c0-f8f0-4687-a731-4d0249a67e0f.png" width=50% height=50%">
+  <img src="/assets/img/9.png" width=50% height=50%">
 </p>
 
 
 ## Walnut Wood Faceplate 
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/61395558/213848262-a905c5e8-e4c7-47f3-8636-b11744e8b276.jpg" width=50% height=50%">
+  <img src="/assets/img/10.jpg" width=50% height=50%">
 </p>
 
 This luckily was much simpler than the housing. I modeled the faceplate in Fusion360 and sent the design to the laser cutter. When laser cutting, I advise putting masking tape on the surface of the wood which completely eliminates burn marks around the outside of the cut. I would highly reccomend this technique to anyone laser cutting a piece that needs to look aesthetic. To finish both the faceplate and the body, I wiped it down with mineral oil and then applied 2 coats of tung oil finish 4 days apart.
