@@ -6,7 +6,6 @@ cover-img: /assets/img/1.jpg
 thumbnail-img: /assets/img/1.jpg
 author: Benjamin Chern
 ---
-# Nixie Tube Clock
 
 This document is intended to explain the technical details of my nixie tube clock, while also providing a rough overview of the journey I took to make this product a reality. Do note that this is my first fully completed project, and as well as my first time using many pieces of equipment. As such, take my process as a loose guideline instead of a set of instructions. Hopefully this write-up will help people avoid some of the mistakes I made during this project, and give people a look into the evolution of ideas during its creation. 
 
@@ -37,13 +36,13 @@ This document is intended to explain the technical details of my nixie tube cloc
                                                                                                                                         
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="https://user-images.githubusercontent.com/61395558/213847010-740acd19-e42b-431b-9e02-1d8d7db48735.jpg" width="350"/>
+          <img src="https://user-images.githubusercontent.com/61395558/213847010-740acd19-e42b-431b-9e02-1d8d7db48735.jpg" width="700"/>
      </div>
      <div style="flex:1;padding-left:10px;">
-          <img src="https://user-images.githubusercontent.com/61395558/213847047-079c2e90-cb61-4a59-bde4-73f682b18211.jpg" width="350"/>
+          <img src="https://user-images.githubusercontent.com/61395558/213847047-079c2e90-cb61-4a59-bde4-73f682b18211.jpg" width="700"/>
      </div>
      <div style="flex:1;padding-left:10px;">
-          <img src="https://user-images.githubusercontent.com/61395558/213846743-f7aa4a15-e72a-4817-91e3-f61856b371e3.jpg" width="350"/>
+          <img src="https://user-images.githubusercontent.com/61395558/213846743-f7aa4a15-e72a-4817-91e3-f61856b371e3.jpg" width="700"/>
      </div>
     <div style="flex:1;padding-left:10px;">
       <img src="https://user-images.githubusercontent.com/61395558/213849102-415ec1cc-c5eb-4e2e-aff2-a5eab86c4bec.gif" width=60% height=50%">
