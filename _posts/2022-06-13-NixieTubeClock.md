@@ -7,6 +7,8 @@ thumbnail-img: /assets/img/1.jpg
 author: Benjamin Chern
 ---
 
+# Introduction
+
 This document is intended to explain the technical details of my nixie tube clock, while also providing a rough overview of the journey I took to make this product a reality. Do note that this is my first fully completed project, and as well as my first time using many pieces of equipment. As such, take my process as a loose guideline instead of a set of instructions. Hopefully this write-up will help people avoid some of the mistakes I made during this project, and give people a look into the evolution of ideas during its creation. 
 
     
