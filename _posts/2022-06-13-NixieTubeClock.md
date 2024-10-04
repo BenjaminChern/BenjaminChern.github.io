@@ -34,7 +34,7 @@ This document is intended to explain the technical details of my nixie tube cloc
                                                                                                                                         
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="/assets/img/1.jpg" width="1200"/>
+          <img src="/assets/img/1.jpg" width="5000"/>
      </div>
      <div style="flex:1;padding-left:10px;">
           <img src="/assets/img/2.jpg" width="1200"/>
