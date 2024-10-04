@@ -4,7 +4,7 @@ title: Self Playing Piano
 subtitle: A project 2.5 years in the making
 author: Benjamin Chern
 youtubeId: pbvPtyYYVq0
-thumbnail: /assets/img/assem3d.png
+thumbnail-img: /assets/img/assem3d.png
 ---
 
 ## Demo:
