@@ -2,7 +2,7 @@
 layout: post
 title: Nixie Tube Clock
 subtitle: This time, its form over function
-cover-img: /assets/img/1.jpg
+cover-img: /assets/img/2.jpg
 thumbnail-img: /assets/img/1.jpg
 author: Benjamin Chern
 ---
