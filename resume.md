@@ -7,8 +7,8 @@ title: Resume
 
 
 <div style="text-align: center;">
-    <img src="/assets/img/resume.jpg" alt="Resume" width="800"/>
+    <img src="/assets/img/Resume.jpg" alt="resume" width="800"/>
 </div>
 
-[Download Resume](/assets/pdfs/resume.pdf)
+[Download Resume](/assets/pdfs/Resume.pdf)
 
