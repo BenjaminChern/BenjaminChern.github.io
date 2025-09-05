@@ -39,7 +39,6 @@ The heart of this build is the optics necessary to overlay a crisp image over no
 
 Constructing custom optics is outside the scope for this project and would result in worse quality images in comparison to pre-existing products on the market. This is the reason I chose to disassemble a pre-existing pair of waveguide glasses, the BT Moverio-300. Epson created this pair of AR glasses back in 2016 that were incredibly ahead of its time; the screen has great resolution and the power bank and compute is surprisingly slim, even for today's standard. However the Moverio-300 runs custom software and firmware which is notoriously hard to alter. Since I wanted this to be a mechanical project with a side of electrical engineering and software, I decided not to mess with the firmware and just repurpose the optic module with my own screen and computer. 
 
-*Internal Optics*
 
 <img src="/assets/img/ARGlass/optics.JPG" alt="" width="400"/>
 <img src="/assets/img/ARGlass/moverio.jpg" alt="" width="400"/>
@@ -48,7 +47,6 @@ Constructing custom optics is outside the scope for this project and would resul
 
 This micro OLED display is only about 0.39 inches across but don't let it's size fool you; the price for the screen was more than the rest of this build combined. With a screen size smaller than a pinky nail, the ECX333A displays high quality video right out the box with a very conveniant micro HDMI port. I did have to fiddle a bit to find the optimal focal point between the optics module and the screen, but after that, it managed to display crisp images on the glasses. 
 
-*ECX 333A*
 
 <img src="/assets/img/ARGlass/ECX333A.JPG" alt="" width="400"/>
 
@@ -56,7 +54,6 @@ This micro OLED display is only about 0.39 inches across but don't let it's size
 
 This project uses a Raspberry Pi 4B to run all the software on the glasses. I think this is a bit overkill, as a Raspberry Pi Zero is enough to do most of the work, but I had a 4B lying around just asking to be used in a project. The Pi is running the Linux based Pi OS and contains a couple Demo programs I wrote to showcase the technology. Internet connection is acheived through a Wi-Fi hotspot on my phone which works surprisingly well while out and about. An accompanying 3000mAh battery pack is used to power the Pi and I designed a basic carrying case to house all the components while traveling.  
 
-*Powerbank and Raspberry Pi*
 
 <img src="/assets/img/ARGlass/powerbank.JPG" alt="" width="400"/>
 
