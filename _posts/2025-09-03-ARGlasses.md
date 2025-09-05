@@ -3,7 +3,7 @@ layout: post
 title: Augmented Reality Glasses
 subtitle: Hardware and Software Demo for Waveguide Based AR Glasses
 author: Benjamin Chern
-youtubeId: pbvPtyYYVq0
+youtubeId: shorts/ggOWZGHBGGM
 cover-img: /assets/img/ARGlass/ARThumb.JPG
 thumbnail-img: /assets/img/ARGlass/ARThumb.JPG
 ---
