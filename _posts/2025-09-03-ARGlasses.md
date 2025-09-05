@@ -61,10 +61,10 @@ This project uses a Raspberry Pi 4B to run all the software on the glasses. I th
 Disassembling the ECX333A was a tremendous learning experience for me to learn about consumer product design. Being careful to not permanently break anything, I peeled back layer after layer of screw, wiring, PCB, and plastic shells to free the focusing lens and mirror. Luckily, the entire optical assembly came out intact and without scraches and even had convenient mounting geometry to make frame designing easier. 
 
 <p float="left">
-  <img src="/assets/img/stage1.JPG" width="300" />
-  <img src="/assets/img/stage2.JPG" width="300" />
-  <img src="/assets/img/stage3.JPG" width="300" />
-  <img src="/assets/img/stage4.JPG" width="300" />
+  <img src="/assets/img/ARGlass/stage1.JPG" width="300" />
+  <img src="/assets/img/ARGlass/stage2.JPG" width="300" />
+  <img src="/assets/img/ARGlass/stage3.JPG" width="300" />
+  <img src="/assets/img/ARGlass/stage4.JPG" width="300" />
 </p>
 
 
@@ -73,17 +73,17 @@ Disassembling the ECX333A was a tremendous learning experience for me to learn a
 When creating wearables that are able to be easily prototyped, I definitly followed the old silicon valley motto: Move fast and break things. The feel and fit of the glasses are incredibly hard to model and measure, so apart from taking a rough measurement of my head diameter, I did a lot of 3D printing to dial in what felt good to wear while also making the product as easy to assemble as possible. For the compute and power supply case, I prototyped a simple box with access ports for the Raspberry pi, but future iterations should slim down the footprint and prettify the design.
 
 <p float="left">
-  <img src="/assets/img/frame1.jpg" width="300" />
-  <img src="/assets/img/frame2.jpg" width="300" />
-  <img src="/assets/img/frame3.jpg" width="300" />
+  <img src="/assets/img/ARGlass/frame1.jpg" width="300" />
+  <img src="/assets/img/ARGlass/frame2.jpg" width="300" />
+  <img src="/assets/img/ARGlass/frame3.jpg" width="300" />
 </p>
 
 ## Software
 
 This is mostly a hardware demo, but I would be remiss if I didn't write a least a little bit of code to showcase the potential of these glasses. As an avid YouTube watcher, I utilized the YouTube API to gather all of the user's subscriptions and to pick a recently uploaded video to display. Selenium then opens a chrome window to play the designated content and once finished, another video is then queued. More practially, I designed a navigation HUD for Google Maps to aid the user while driving. Looking at the phone for navigation for even a moment presents safety concerns, especially while driving on the highway. By overlaying the instructions on top of the driver's vision, they can keep 100% of their vision on the road while simultaneously checking their map. 
 
-<img src="/assets/img/googleMaps.JPG" width="300" />
-<img src="/assets/img/landscape.JPG" width="300" />
+<img src="/assets/img/ARGlass/googleMaps.JPG" width="300" />
+<img src="/assets/img/ARGlass/landscape.JPG" width="300" />
 
 ## Conclusions and Future Work
 
