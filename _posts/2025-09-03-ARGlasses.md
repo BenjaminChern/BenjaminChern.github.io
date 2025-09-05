@@ -4,8 +4,8 @@ title: Augmented Reality Glasses
 subtitle: Hardware and Software Demo for Waveguide Based AR Glasses
 author: Benjamin Chern
 youtubeId: pbvPtyYYVq0
-cover-img: /assets/img/ARGlass/ARThumb.jpg
-thumbnail-img: /assets/img/ARGlass/ARThumb.jpg
+cover-img: /assets/img/ARGlass/ARThumb.JPG
+thumbnail-img: /assets/img/ARGlass/ARThumb.JPG
 ---
 
 ## Demo:
@@ -31,6 +31,7 @@ I have always thought that having a pair of Augmented Reality glasses would be a
 The heart of this build is the optics necessary to overlay a crisp image over normal vision. It is not enough to just place a transparent screen on top of a pair of lenses since the focal length of the enviroment and screen would be completely different, causing blurryness and visual strain. The two conventional solution to this problem are prism based displays and waveguide based displays. Prism displays offer a wider field of view (FOV) and easier construction in exchange for a bulkier frame. However for my use case, I want to display a very minimal amount of information while keeping the footprint small, making waveguide optics the preferred choice. 
 
 *Google Glass (waveguide) vs Mira (Prism)*
+
 <img src="/assets/img/ARGlass/googleglass.jpg" alt="" width="400"/>
 <img src="/assets/img/ARGlass/mira.jpg" alt="" width="400"/>
 
@@ -39,6 +40,7 @@ The heart of this build is the optics necessary to overlay a crisp image over no
 Constructing custom optics is outside the scope for this project and would result in worse quality images in comparison to pre-existing products on the market. This is the reason I chose to disassemble a pre-existing pair of waveguide glasses, the BT Moverio-300. Epson created this pair of AR glasses back in 2016 that were incredibly ahead of its time; the screen has great resolution and the power bank and compute is surprisingly slim, even for today's standard. However the Moverio-300 runs custom software and firmware which is notoriously hard to alter. Since I wanted this to be a mechanical project with a side of electrical engineering and software, I decided not to mess with the firmware and just repurpose the optic module with my own screen and computer. 
 
 *Internal Optics*
+
 <img src="/assets/img/ARGlass/optics.JPG" alt="" width="400"/>
 <img src="/assets/img/ARGlass/moverio.jpg" alt="" width="400"/>
 
@@ -47,6 +49,7 @@ Constructing custom optics is outside the scope for this project and would resul
 This micro OLED display is only about 0.39 inches across but don't let it's size fool you; the price for the screen was more than the rest of this build combined. With a screen size smaller than a pinky nail, the ECX333A displays high quality video right out the box with a very conveniant micro HDMI port. I did have to fiddle a bit to find the optimal focal point between the optics module and the screen, but after that, it managed to display crisp images on the glasses. 
 
 *ECX 333A*
+
 <img src="/assets/img/ARGlass/ECX333A.JPG" alt="" width="400"/>
 
 ### Raspberry Pi and Power
@@ -54,6 +57,7 @@ This micro OLED display is only about 0.39 inches across but don't let it's size
 This project uses a Raspberry Pi 4B to run all the software on the glasses. I think this is a bit overkill, as a Raspberry Pi Zero is enough to do most of the work, but I had a 4B lying around just asking to be used in a project. The Pi is running the Linux based Pi OS and contains a couple Demo programs I wrote to showcase the technology. Internet connection is acheived through a Wi-Fi hotspot on my phone which works surprisingly well while out and about. An accompanying 3000mAh battery pack is used to power the Pi and I designed a basic carrying case to house all the components while traveling.  
 
 *Powerbank and Raspberry Pi*
+
 <img src="/assets/img/ARGlass/powerbank.JPG" alt="" width="400"/>
 
 ## Disassembly
@@ -73,9 +77,9 @@ Disassembling the ECX333A was a tremendous learning experience for me to learn a
 When creating wearables that are able to be easily prototyped, I definitly followed the old silicon valley motto: Move fast and break things. The feel and fit of the glasses are incredibly hard to model and measure, so apart from taking a rough measurement of my head diameter, I did a lot of 3D printing to dial in what felt good to wear while also making the product as easy to assemble as possible. For the compute and power supply case, I prototyped a simple box with access ports for the Raspberry pi, but future iterations should slim down the footprint and prettify the design.
 
 <p float="left">
-  <img src="/assets/img/ARGlass/frame1.jpg" width="300" />
-  <img src="/assets/img/ARGlass/frame2.jpg" width="300" />
-  <img src="/assets/img/ARGlass/frame3.jpg" width="300" />
+  <img src="/assets/img/ARGlass/frame1.png" width="300" />
+  <img src="/assets/img/ARGlass/frame2.png" width="300" />
+  <img src="/assets/img/ARGlass/frame3.png" width="300" />
 </p>
 
 ## Software
