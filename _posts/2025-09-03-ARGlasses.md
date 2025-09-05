@@ -4,8 +4,8 @@ title: Augmented Reality Glasses
 subtitle: Hardware and Software Demo for Waveguide Based AR Glasses
 author: Benjamin Chern
 youtubeId: pbvPtyYYVq0
-cover-img: /assets/img/assem3d.png
-thumbnail-img: /assets/img/assem3d.png
+cover-img: /assets/img/ARGlass/ARThumb.jpg
+thumbnail-img: /assets/img/ARGlass/ARThumb.jpg
 ---
 
 ## Demo:
@@ -28,10 +28,11 @@ I have always thought that having a pair of Augmented Reality glasses would be a
 
 ## Overview
 
-The heart of this build is the optics necessary to overlay a crisp image over normal vision. It is not enough to just place a transparent screen on top of a pair of lenses since the focal length of the enviroment and screen would be completely different, causing blurryness and visual strain. The two conventional solution to this problem are prism based displays and waveguide based displays. Prism displays offer a wider field of view (FOV) and easier construction in exchange for a bulkier frame. However for my use case, I want to display a very minimal amount of information, with video capability as a secondary benefit, making waveguide optics the preferred choice. 
+The heart of this build is the optics necessary to overlay a crisp image over normal vision. It is not enough to just place a transparent screen on top of a pair of lenses since the focal length of the enviroment and screen would be completely different, causing blurryness and visual strain. The two conventional solution to this problem are prism based displays and waveguide based displays. Prism displays offer a wider field of view (FOV) and easier construction in exchange for a bulkier frame. However for my use case, I want to display a very minimal amount of information while keeping the footprint small, making waveguide optics the preferred choice. 
 
-//waveguide vs prism devices on market
-<img src="/assets/img/IMG_1989.JPG" alt="Pile of Solenoid" width="400"/>
+*Google Glass (waveguide) vs Mira (Prism)
+<img src="/assets/img/ARGlass/googleglass.jpg" alt="" width="400"/>
+<img src="/assets/img/ARGlass/mira.jpg" alt="" width="400"/>
 
 *Moverio BT-300 Smart Glasses*
 
@@ -45,9 +46,9 @@ This micro OLED display is only about 0.39 inches across but don't let it's size
 
 //Image of ECX333A
 
-*Raspberry Pi*
+*Raspberry Pi and Power*
 
-This project uses a Raspberry Pi 4B to run all the software on the glasses. I think this is a bit overkill, as a Raspberry Pi Zero is enough to do most of the work, but I had a 4B lying around just asking to be used in a project. The Pi is running the Linux based Pi OS and contains a couple Demo programs I wrote to showcase the technology. To connect to the internet, I paired the Pi with my phone's hotspot which works surprisingly well while out and about.  
+This project uses a Raspberry Pi 4B to run all the software on the glasses. I think this is a bit overkill, as a Raspberry Pi Zero is enough to do most of the work, but I had a 4B lying around just asking to be used in a project. The Pi is running the Linux based Pi OS and contains a couple Demo programs I wrote to showcase the technology. Internet connection is acheived through a Wi-Fi hotspot on my phone which works surprisingly well while out and about. An accompanying 3000mAh battery pack is used to power the Pi and I designed a basic carrying case to house all the components while traveling.  
 
 ## Disassembly
 
@@ -58,7 +59,6 @@ Disassembling the ECX333A was a tremendous learning experience for me to learn a
   <img src="/assets/img/Boardviewer.png" width="300" /> 
 </p>
 
-*Final Physical Product, Final PCB Design*
 
 ## Frame 3D Modeling
 
