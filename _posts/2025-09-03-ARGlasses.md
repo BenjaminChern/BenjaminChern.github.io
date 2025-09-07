@@ -3,7 +3,7 @@ layout: post
 title: Augmented Reality Glasses
 subtitle: Hardware and Software Demo for Waveguide Based AR Glasses
 author: Benjamin Chern
-youtubeId: shorts/ggOWZGHBGGM
+youtubeId: ggOWZGHBGGM
 cover-img: /assets/img/ARGlass/ARThumb.JPG
 thumbnail-img: /assets/img/ARGlass/ARThumb.JPG
 ---
@@ -39,7 +39,7 @@ The heart of this build is the optics necessary to overlay a crisp image over no
 
 Constructing custom optics is outside the scope for this project and would result in worse quality images in comparison to pre-existing products on the market. This is the reason I chose to disassemble a pre-existing pair of waveguide glasses, the BT Moverio-300. Epson created this pair of AR glasses back in 2016 that were incredibly ahead of its time; the screen has great resolution and the power bank and compute is surprisingly slim, even for today's standard. However the Moverio-300 runs custom software and firmware which is notoriously hard to alter. Since I wanted this to be a mechanical project with a side of electrical engineering and software, I decided not to mess with the firmware and just repurpose the optic module with my own screen and computer. 
 
-
+*Internal Optics*
 <img src="/assets/img/ARGlass/optics.JPG" alt="" width="400"/>
 <img src="/assets/img/ARGlass/moverio.jpg" alt="" width="400"/>
 
