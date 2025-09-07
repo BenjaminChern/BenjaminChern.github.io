@@ -41,6 +41,7 @@ Constructing custom optics is outside the scope for this project and would resul
 
 *Internal Optics*
 <img src="/assets/img/ARGlass/optics.JPG" alt="" width="400"/>
+*Original Glasses*
 <img src="/assets/img/ARGlass/moverio.jpg" alt="" width="400"/>
 
 ### ECX333A OLED Display
